@@ -30,3 +30,15 @@ extension Date: AHoleType {
         return Date()
     }
 }
+
+extension Array: AHoleType {
+    public static func holed() -> Array<Element> {
+        return Array<Element>()
+    }
+}
+
+extension Set: AHoleType {
+    public static func holed() -> Set<Element> {
+        return Set<Element>()
+    }
+}
